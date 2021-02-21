@@ -138,7 +138,7 @@ def get_product_title_in_cart():
 
 def assert_items(product_title, item_title_in_cart):
     if str(product_title) == str(item_title_in_cart):
-        print("The names is the same!")
+        print("The names is the same!", str(product_title), str(item_title_in_cart))
         return True
     else:
         print('Not the same', str(product_title), str(item_title_in_cart))
@@ -147,10 +147,10 @@ def assert_items(product_title, item_title_in_cart):
 
 def assert_prices(item_price, quantity, subtotal):
     if item_price * quantity == subtotal:
-        print("It's ok")
+        print("The subtotal is equal to the price multiplied by the quantity")
         return True
     else:
-        print('Not the same')
+        print('The subtotal is NOT equal to the price multiplied by the quantity')
         return False
 
 
